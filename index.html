@@ -470,3 +470,61 @@
 
 </body>
 </html>
+<li><a href="#progress">進捗状況</a></li>
+<section id="progress">
+  <h2>進捗状況</h2>
+  <p>本工事の進捗状況を写真でお知らせします。</p>
+
+  <div class="gallery">
+    <!-- 写真1 -->
+    <div class="gallery-item">
+      <img src="images/progress_01.jpg" alt="進捗写真1">
+      <p class="caption">●月●日　着工前の状況</p>
+    </div>
+
+    <!-- 写真2 -->
+    <div class="gallery-item">
+      <img src="images/progress_02.jpg" alt="進捗写真2">
+      <p class="caption">●月●日　掘削状況</p>
+    </div>
+
+    <!-- 写真3 -->
+    <div class="gallery-item">
+      <img src="images/progress_03.jpg" alt="進捗写真3">
+      <p class="caption">●月●日　路体盛土状況</p>
+    </div>
+
+    <!-- 写真を追加したい場合はこの下に同じ形式で増やせます -->
+  </div>
+
+  <p class="note">※写真は随時更新していきます。</p>
+</section>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #eee;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
